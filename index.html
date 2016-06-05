@@ -23,22 +23,35 @@
         <link rel="shortcut icon" href="favicon.ico">
 
     </head>
-    <body>
-    <div class="container">
-      
+    <body id="content">
+    <div class="container-fluid">
+      <!-- navbar links -->
       <header class="navbar-fixed-top">
         <img src="api_superstore_logo_bg.png" style=" height: 50px; width; 100px;">
+<<<<<<< HEAD
       </header>
+=======
+        <a href="#content">Home</a>
+        <a href="#product-description">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+        <a href="#signup">Sign up!</a>
+        <!-- share links below have same id to float right end of navbar -->
+        <a href="https://www.facebook.com/" id="share-links"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-128.png" alt="facebook share icon" style=" height: 42px; width: 42px; margin-top: 4px;"></a>
+        <a href="https://twitter.com/" id="share-links"><img src="https://cdn1.iconfinder.com/data/icons/iconza-circle-social/64/697029-twitter-512.png" alt="twiiter share icon" style=" height: 50px; width: 50px;"></a>
+>>>>>>> gh-pages
       
+      </header>
+      <!-- api video with height and width changes -->
       <div class="row" id="product-video">
-        <section class="col-sm-6 col-md-push-3">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen></iframe>
+        <section class="col-sm-12 col-md-6 col-md-push-3">
+        <iframe width="600" height="330" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen></iframe>
           <p>Fast access to the most cuttingedge APIs</p>
         </section>
       </div>
       
       <div class="row" id="product-description">
-        <section class="col-sm-8 col-md-push-2">
+        <section class="col-sm-12 col-md-8 col-md-push-2">
           <h2>What We Are About</h2>
           <p> 
              The API Superstore provides a catalog of third­party APIs that you can use to enhance your business. From e­commerce to maps, API Superstore lists all of the services that customers expect and saves you the headache of sorting it out yourself! The longer you wait, the longer you’re not making more money and happier users!
@@ -46,7 +59,7 @@
         </section>
       </div>
       
-      <div class="row" id="features">
+      <div class="row" id="features"><!-- containter column changes based on small  and medium screen sizes(column-small-6, column-medium-3) -->
         <h2>Features</h2>
         <section class="col-sm-6 col-md-3">
           <img class="icon img-circle" id="api" src="demoapi-big-icon.png" alt="API feature picture">
@@ -75,28 +88,60 @@
             Elegant shopping experience
           </p>
         </section>
-      </div>
+      </div><!-- end features row -->
       
       <div class="row" id="testimonials">
         <h2>Testimonials</h2>
-        <section class="col-md-4">
-          <p>
+        <section class="col-md-6">
+          <p id="test1"><!-- each testimonial have seperate ids for padding style (in css) -->
             “This is the best website ever!” ­­ C.P. Yu, AmazingSite.com
           </p>
-        </section>
-        <section class="col-md-4">
-          <p>
+          <p id="test2">
             “Once again, I’m blown away by the amazing offerings of the API Superstore. You really are SUPER!” ­­ Clara Cache,
           </p>
         </section>
-        <section class="col-md-4">
-          <p>
+        <section class="col-md-6">
+          <p id="test3">
             “I have really admired the way the API Superstore team has created a truly divine interface for browsing all that information that’s out there online for free. For a low monthly fee, I’m able to more easily keep up with the churn of information that makes application development so difficult, and API Superstore makes my world so much happier! Please don’t stop the rocking!” ­­ Amy Zon, Massive Anonymous Customer
           </p>
         </section>
-      </div>
+      </div><!-- end testimonials -->
+      
+      <div class="row" id="signup"><!-- sign up and contact grouped together to create the 12 column layout -->
+        <form>
+          <section class="col-sm-6" id="sign-form">
+          <h2>Signup and Save!</h2>
+          <div class="form-group">
+            <label for="inputName">Name</label>
+            <input class="form-control" type="Name" id="inputName" placeholder="Name">
+          </div>
+            
+          <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input class="form-control" type="Email" id="inputEmail" placeholder="Email">
+          </div>  
+          
+          <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input class="form-control" type="Password" id="inputPassword" placeholder="Password">
+          </div>
+          
+          <div class="form-group">
+            <input type="submit" class="btn btn-default" value="submit">
+          </div>  
+            
+          </section><!-- end sign form section -->
+        </form>
+        
+          <section class="col-sm-4 col-sm-push-1" id="contact"><!-- 4 column with 1 on each side -->
+            <h2>Contact Info</h2>
+            <p>Phone: 206­555­1234</p>
+            <p>Email: <a href="mailto:info@apisuperstore.com">info@apisupertore.com</a></p>
+            <p>Location: Seattle, Washington, USA</p>
+          </section>
 
-
+      </div><!-- row class -->
+      
     </div>
     </body>
 </html>
